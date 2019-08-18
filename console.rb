@@ -2,7 +2,7 @@ require_relative('models/ticket')
 require_relative('models/film')
 require_relative('models/customer')
 
-#require('pry-byebug')
+require('pry-byebug')
 
 Ticket.delete_all()
 Customer.delete_all()
@@ -70,5 +70,5 @@ tickets = Ticket.all()
 puts customer1.customer_films()[0].title
 puts film1.film_customers().first().name
 
-#binding.pry
-#nil
+binding.pry
+nil

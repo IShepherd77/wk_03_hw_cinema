@@ -3,7 +3,7 @@ require_relative("../db/sql_runner")
 class Ticket
 
   attr_reader :id
-  attr_accessor :title, :price
+  attr_accessor :customer_id, :film_id
 
 def initialize(options)
   @id = options['id'].to_i if options['id']
@@ -20,7 +20,7 @@ end
 
 def update()
   sql = "UPDATE tickets (customer_id, film_id) = ($1, $2) WHERE id = $3"
-  values = [@customer_id, @film_id, @id] 
+  values = [@customer_id, @film_id, @id]
 end
 
 def delete()
