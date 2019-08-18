@@ -67,8 +67,7 @@ end
 
 # #chosen customer.rb as searching by customer id in values but again do not know how to return result
 # def no_of_tickets_bought_by_customer()
-#   sql ="SELECT COUNT(*) FROM customers INNER JOIN tickets ON customers.id = tickets.customer_id
-#   WHERE tickets.customer_id = $1"
+#   sql ="SELECT COUNT(*) FROM tickets WHERE customer_id = 19"
 # values = [@id]
 # customer_data = SqlRunner.run(sql, values)
 # return Customer.map_items(customer_data)
